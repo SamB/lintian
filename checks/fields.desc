@@ -995,6 +995,21 @@ Info: The VCS-* field contains an uncanonical URI. Please update to use
  and makes debcheckout work independent of the port forwarding and
  redirections properly working.
 
+Tag: vcs-field-bitrotted
+Severity: normal
+Certainty: certain
+Info: The VCS-* field uses a form which no longer works. Update it to use
+ the current canonical URI instead, or <tt>debcheckout</tt> will <i>not</i> work.
+
+Tag: vcs-git-uses-invalid-user-uri
+Severity: normal
+Certainty: certain
+Info: The Vcs-Git field is pointing to a personal repository using
+ a git://(git|anonscm).debian.org/~$login/$PRJ.git style URI.  This is not
+ recommended since the repository this points is not automatically updated
+ when pushing to the personal repository.  The recommended URI for anonymous
+ access is git://anonscm.debian.org/users/$login/$PRJ.git.
+
 Tag: lib-recommends-documentation
 Severity: normal
 Certainty: possible

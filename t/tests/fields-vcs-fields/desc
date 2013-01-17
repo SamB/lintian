@@ -7,3 +7,5 @@ Test-Against:
  vcs-field-uses-unknown-uri-format
  vcs-field-has-unexpected-spaces
  vcs-field-not-canonical
+ vcs-field-bitrotted
+ vcs-git-uses-invalid-user-uri

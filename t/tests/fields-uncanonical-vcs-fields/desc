@@ -4,3 +4,5 @@ Description: Test for vcs fields needing canonication
 Version: 1.0
 Test-For:
  vcs-field-not-canonical
+ vcs-field-bitrotted
+ vcs-git-uses-invalid-user-uri
